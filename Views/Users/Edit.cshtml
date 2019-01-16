@@ -1,0 +1,47 @@
+﻿@model LibraryApp1.Models.Users
+
+@{
+    ViewData["Title"] = "Edit user";
+}
+
+<div class="col-md-offset-5">
+    <h1>Edit User</h1>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label class="control-label">Name</label>
+                <input asp-for="@Model.userName" class="form-control" />
+                <span asp-validation-for="@Model.userName"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Surname</label>
+                <input asp-for="@Model.userSurname" class="form-control" />
+                <span asp-validation-for="@Model.userSurname"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Email</label>
+                <input asp-for="@Model.userEmail" class="form-control" />
+                <span asp-validation-for="@Model.userEmail"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Address</label>
+                <input asp-for="@Model.userAddress" class="form-control" />
+                <span asp-validation-for="@Model.userAddress"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Phone</label>
+                <input asp-for="@Model.userPhone" class="form-control" />
+                <span asp-validation-for="@Model.userPhone"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Edit" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

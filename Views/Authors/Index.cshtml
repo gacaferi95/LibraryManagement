@@ -1,0 +1,25 @@
+﻿@model IEnumerable<LibraryApp1.Models.Authors>
+
+<h1>Authors</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in Model)
+        {
+            <tr>
+                <td>@author.authorName</td>
+                <td>
+                    <a asp-action="#">Edit</a>
+                    <a asp-action="#">Delete</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>

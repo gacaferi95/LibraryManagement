@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LibraryApp1.Models.Books>
+
+
+
+
+
+<h1>Books</h1>
+<div>
+    <h3><a asp-controller="Books" asp-action="AddBook">Add Book</a></h3>
+</div>
+
+    <div class="row">
+        @foreach (var book in Model)
+        {
+            <div class="col-md-3 books">
+                <div class="booksimage"><img src=@book.image /></div>
+                <div class="bookstext">
+                    <h3><b>Title:</b> @book.bookTitle</h3>
+                    <p><b>Authors:</b> @book.Authors.authorName</p>
+                    <p><b>Category:</b> @book.Categories.categoryName</p>
+                </div>
+                <div class="booksnumbers">Quantity:<b>@book.Numbers</b></div>
+
+            </div>
+        }
+    </div>
+
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.bookTitle</td>
+                <td>@book.Authors.authorName @book.Authors.authorSurname</td>
+                <td>@book.Categories.categoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>*@

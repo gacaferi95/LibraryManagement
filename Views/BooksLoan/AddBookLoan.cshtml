@@ -1,0 +1,37 @@
+﻿@model LibraryApp1.Models.BooksLoan
+
+<h2>Loan Book</h2>
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <form asp-action="AddBookLoan">
+            <div class="form-group">
+                <label class="control-label">Books</label>
+                <select asp-for="BooksId" class="form-control" id="booksloaned" asp-items="@(new SelectList(ViewBag.BooksList,"ID","bookTitle"))"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Users</label>
+                <select asp-for="UsersId" class="form-control" id="userss"
+                        asp-items="@(new SelectList(ViewBag.UsersList,"ID","userName"))"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Loan book" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+        $('#booksloaned').on('change', function () {
+            var value = $(this).children("option:selected").val();
+            console.log(value);
+        });
+
+        $('#userss').on('change', function () {
+            var valueuser = $(this).children("option:selected").val();
+            console.log(valueuser);
+        });
+    });
+</script>

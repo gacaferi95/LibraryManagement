@@ -1,0 +1,89 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+.books {
+    background-color: #E5E7E9;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 4px;
+}
+
+     .booksimage{
+        display:inline;
+        position:absolute;
+        border:2px solid;
+        width:140px;
+        height:140px;
+        bottom:30px;
+    }
+            .booksimage img{
+                width:136px;
+                height:136px;
+            }
+
+.bookstext {
+    display: inline;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 180px;
+}
+
+.booksnumbers{
+    right:20px;
+    bottom:10px;
+    position:absolute;
+    display:inline;
+}
+
+.booksimage1 {
+    display:block;
+    border: 2px solid;
+    width: 140px;
+    height: 140px;
+    margin:2px;
+}
+.booksimage1 img {
+    width: 136px;
+    height: 136px;
+}
+
+table .textStyle{
+    padding-bottom:50px;
+}

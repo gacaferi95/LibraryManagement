@@ -1,0 +1,22 @@
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.deps.json
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.runtimeconfig.json
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.runtimeconfig.dev.json
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.dll
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.pdb
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.csprojAssemblyReference.cache
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.AssemblyInfoInputs.cache
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.AssemblyInfo.cs
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.dll
+C:\Users\Tonni\source\repos\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.pdb
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.deps.json
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.runtimeconfig.json
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.runtimeconfig.dev.json
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.dll
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\bin\Debug\netcoreapp2.0\LibraryApp1.pdb
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.AssemblyInfoInputs.cache
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.AssemblyInfo.cs
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.dll
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.pdb
+C:\Users\Tonni\PRogramming Learning\LibraryApp1\LibraryApp1\obj\Debug\netcoreapp2.0\LibraryApp1.csprojAssemblyReference.cache

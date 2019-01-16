@@ -1,0 +1,135 @@
+﻿@model IEnumerable<LibraryApp1.Models.Users>
+
+@{
+    ViewData["Title"] = "Users";
+}
+<style>
+    .delete-section {
+        display: inline;
+    }
+</style>
+<h1>Users</h1>
+
+<h4>
+    <a asp-action="Create">Create User</a>
+</h4>
+<table class="table">
+    <thead class="">
+        <tr>
+            <th>Name </th>
+            <th>Surname </th>
+            <th>Email </th>
+            <th>Adress </th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.userName</td>
+                <td>@item.userSurname</td>
+                <td>@item.userEmail</td>
+                <td>@item.userAddress</td>
+                <td>@item.userPhone</td>
+                <td>
+                    @*<a asp-action="Edit" asp-route-id="@item.ID">Edit </a>*@
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+                    <div class="delete-section">
+                        @*href="@Url.Action("Delete", new { id = item.ID })*@
+                        <a class="delete-link">Delete</a>
+                        <div class="btn btn-primary delete-confirm" style="display:none" data-delete-id="@item.ID">Confirm Delete</div>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+
+            $("a.delete-link").on("click", function () {
+                var delete_link = $(this);
+                delete_link.hide();
+
+                var confirm_delete = delete_link.siblings(".delete-confirm");
+                confirm_delete.show();
+
+                var cancelDelete = function () {
+                    removeEvents();
+                    ShowDeleteLink();
+                };
+
+                var dataid = confirm_delete.attr('data-delete-id');
+                console.log(dataid);
+
+                var deleteItem = function () {
+                removeEvents();
+                confirm_delete.hide();
+
+
+                    $.ajax({
+                            type: "POST",
+                            url: '@Url.Action("Delete")',
+                            data: { id: dataid },
+                            success: function () {
+                                console.log("success!");
+                                 var parentRow = delete_link.parents("tr:first");
+                                parentRow.fadeOut('fast', function () {
+                                    parentRow.remove();
+                                });
+                            },
+                            error: function (data) {
+                                alert("Error: " + data.id+", cant delete this user.");
+                            }
+                          });
+
+                @*$.post('@Url.Action("Delete",new { id = dataid })')
+                    .done(function () {
+                        var parentRow = delete_link.parents("tr:first");
+                       parentRow.fadeOut('fast', function () {
+                           parentRow.remove();
+                       });
+                   }).fail(function (data) {
+                       alert("error");
+                   });
+                return false;*@
+            };
+
+
+                var removeEvents = function () {
+                    confirm_delete.off("click", deleteItem);
+                    $(document).on("click", cancelDelete);
+                    $(document).off("keypress", onKeyPress);
+                };
+
+                var ShowDeleteLink = function () {
+                    confirm_delete.hide();
+                    delete_link.show();
+                };
+
+                var onKeyPress = function (e) {
+                    //Cancel if escape key pressed
+                    if (e.which == 27) {
+                        cancelDelete();
+                    }
+                };
+
+                confirm_delete.on("click", deleteItem);
+                $(document).on("click", cancelDelete);
+                $(document).on("keypress", onKeyPress);
+
+
+                return false;
+
+
+            });
+        });
+    </script>
+}

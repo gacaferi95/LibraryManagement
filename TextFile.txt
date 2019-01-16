@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=(localdb)\\mssqllocaldb;Database=LibraryApp1Context-1971c29d-d3c1-438b-8d12-db4420ba9703;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

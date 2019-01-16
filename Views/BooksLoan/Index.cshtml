@@ -1,0 +1,31 @@
+﻿@model IEnumerable<LibraryApp1.Models.BooksLoan>
+
+<h1>Books Loaned</h1>
+<div>
+    <h3><a asp-controller="BooksLoan" asp-action="AddBookLoan">Loan Book</a></h3>
+</div>
+<table class="table textStyle">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Borrowed date</th>
+            <th>Returned date</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr style="font-display:block">
+            <td><div class="booksimage1"><img src="@item.Books.image"/></div></td>
+            <td style="padding-top:50px">@item.Books.bookTitle</td>
+            <td style="padding-top:50px">@item.Books.Authors.authorName</td>
+            <td style="padding-top:50px">@item.IssuedData</td>
+            <td style="padding-top:50px">@item.ReturnedDate</td>
+            <td style="padding-top:50px">@item.Users.userName @item.Users.userSurname</td>
+        </tr>
+        }
+    </tbody>
+</table>
