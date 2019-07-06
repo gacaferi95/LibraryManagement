@@ -17,6 +17,7 @@ namespace LibraryApp1.Controllers
         public BooksLoanController(LibraryApp1Context context)
         {
             _context = context;
+
         }
         // GET: /<controller>/
         public IActionResult Index()
