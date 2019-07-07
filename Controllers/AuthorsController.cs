@@ -15,6 +15,7 @@ namespace LibraryApp1.Controllers
         public AuthorsController(LibraryApp1Context context)
         {
             _context = context;
+
         }
 
         // GET: /<controller>/
